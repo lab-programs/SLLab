@@ -1,0 +1,55 @@
+<!-- Form Example -->
+
+<html>
+	<head>
+		<title>
+			Customer Feedback
+		</title>
+	</head>
+	
+	<body>
+		<div>
+		
+			<h2> Enter your feedback </h2>
+			
+			<form action="program06_thankyou.html">
+			
+				Name<br>
+				<input type="text" name="customerName" placeholder="Your Name" />
+				
+				<br>
+				
+				Location<br>
+				<select>
+					<option value="bangalore" selected>Bangalore</option>
+					<option value="chennai">Chennai</option>
+					<option value="delhi">Delhi</option>
+				</select>
+				
+				<br>
+				
+				Gender<br>
+				<input type="radio" name="gender" value="male" checked>Male</input>
+				<input type="radio" name="gender" value="female">Female</input>
+				<input type="radio" name="gender" value="other">Other</input>
+				
+				<br>
+				
+				What did you like about our store?<br>
+				<input type="checkbox" name="priceFeedback" value="priceFeedback">Reasonable Price</input>
+				<input type="checkbox" name="qualityFeedback" value="qualityFeedback">Good Quality</input>
+				<input type="checkbox" name="locationFeedback" value="locationFeedback">Location is convenient</input>
+				<input type="checkbox" name="stockFeedback" value="stockFeedback">Most Items are available in stock</input>
+				
+				Any Other Feedback<br>
+				<textarea name="otherFeedback" rows="10" cols="100" placeholder="Service was good"></textarea>
+				
+				<br>
+				
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+				
+			</form>
+		</div>
+	</body>
+</html>

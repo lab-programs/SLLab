@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>
+			Mouse Event
+		</title>
+	</head>
+	
+	<script>
+		function bigImage(x) {
+			x.style.height="100px"
+			x.style.width="100px"
+		}
+		
+		function normalImage(x) {
+			x.style.height="50px"
+			x.style.width="50px"
+		}
+		
+	</script>
+	<body>
+		<img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border=0 src="image.jpg" alt="Image" width="50" height="50">
+		<p> When mouse hovers over the image, it doubles in size</p>
+		<p> When mouse is not hovering over the image, it's size is back to normal</p>
+	</body>
+</html>
+

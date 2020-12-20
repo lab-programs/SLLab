@@ -1,0 +1,28 @@
+
+<html>
+	<head>
+		<title>
+			Handling JSON dynamically
+		</title>
+		
+		<script type="text/javascript" src="abc.json"></script>
+		<script type="text/javascript">
+			function load() {
+				var names = JSON.parse(data);
+				alert("No. of names = " + names.length);
+				
+				var div=document.getElementById("data");
+				
+				for(var i=0; i< names.length; i++) {
+					div.innerHTML += "<p class='inner' id="+i+">"+names[i].name+"</p><br>"
+				}
+			}
+		</script>
+	</head>
+	
+	<body onload="load()">
+		<div id="data">
+		
+		</div>
+	</body>
+</html>

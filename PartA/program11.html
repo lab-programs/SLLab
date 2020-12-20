@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>
+			On Click Event
+		</title>
+		
+		<script>
+			function callMe() {
+				var x = document.getElementById("myButton");
+				x.addEventListener("click", function1);
+				x.addEventListener("click", function2);
+				
+				function function1() {
+					alert("Function 1 was executed");
+				}
+				
+				function function2() {
+					alert("Function2 was executed");
+				}
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		<div>
+			<h2>Javascript addEventListener()</h2>
+			
+			<p> 2 events on clicking one button </p>
+			
+			<button id="myButton">Click</button>
+			<script>
+				callMe()
+			</script>
+		</div>
+	</body>
+</html>
+
