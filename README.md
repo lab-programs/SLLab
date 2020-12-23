@@ -15,10 +15,12 @@ import pandas as pd
 df = pd.read_csv('file.csv')
 ```
 
-**3. How to map the values in the current column to a separate set of values?**
+**3. How to map the values in the current column 
+to a separate set of values?**
 
 ```py
-# If the column name is 'A' and it can have two values: 0 or 1
+# If the column name is 'A'
+# and it can have two values: 0 or 1
 df['A'] = df['A'].map({
   0: 'Zero',
   1: 'One'
@@ -31,7 +33,7 @@ df['A'] = df['A'].map({
 print(df.head(5))
 ```
 
-**5. How to drop one or set of columns - inplace (the prefered way of doing it)?**
+**5. How to drop one or set of columns - inplace?**
 
 ```py
 columnsToDrop = ['A', 'B', 'C']
@@ -59,15 +61,18 @@ df['A'].fillna('N')
 **8. How to visualize a a plot?**
 
 ```py
-# There are 2 columns involved here. One is the 'X' column and the other is the 'Y' column.
+# There are 2 columns involved here. 
+# One is the 'X' column and the other is the 'Y' column.
 ax = sns.countplot(x='X', hue='Y', palette='Set1', data=df)
 ax.set(title='X vs Y Plot', xlabel='Ex', ylabel='Why')
 plt.show()
 ```
 
-**9. How to print crosstab between 'X' and 'Y' where 'X' is an independent column and 'Y' is dependent?**
+**9. How to print crosstab between 'X' and 'Y'?**
+
 
 ```py
+# Here 'X' is an independent column and 'Y' can be any column
 print(pd.crosstab(df['X'], df.Y))
 ```
 
