@@ -31,6 +31,10 @@ df['A'] = df['A'].map({
 
 ```py
 print(df.head(5))
+# Describe the data
+print(df.describe())
+# Info about the data
+print(df.info())
 ```
 
 **5. How to drop one or set of columns - inplace?**
