@@ -91,3 +91,9 @@ categories = ['A', 'B', 'C']
 df['X_Cuts'] = pd.cut(df.X, interval, labels=categories)
 # To plot this, use x='X_Cuts' and hue = as asked in question
 ```
+
+**11. How to rename columns?**
+
+```py
+df.rename(columns={'A':'Apple', 'B':'Banana', 'C':'Cake'}, inplace=True)
+```
