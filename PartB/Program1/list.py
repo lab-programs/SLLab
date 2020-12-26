@@ -4,7 +4,7 @@ def removeDuplicates(l):
 # Read input from the user
 listUnformatted = str(input())
 
-l = python3 filelistUnformatted.split(' ')
+l = listUnformatted.split(' ')
 l = removeDuplicates(l)
 print(l)
 
